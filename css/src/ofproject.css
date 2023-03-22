@@ -1,0 +1,46 @@
+
+#headBox {
+  height: 70px;
+  background-color: #ccc;
+}
+.headinner {
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+h1 {
+  width: 80%;
+}
+.unb {
+  width: 27%;
+  display: flex;
+  align-items: center;
+}
+.about_part {
+  width: 33.3%;
+  text-align: center;
+}
+.place_part {
+  width: 33.3%;
+  text-align: center;
+}
+.contact_part {
+  width: 33.3%;
+  text-align: center;
+}
+#viewport {
+  text-align: center;
+  background-color: #ddd;
+}
+#about {
+  text-align: center;
+  background-color: #ccc;
+}
+#place {
+  text-align: center;
+  background-color: #ddd;
+}
+#contact {
+  text-align: center;
+  background-color: #ccc;
+}
