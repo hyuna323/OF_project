@@ -1,15 +1,31 @@
+/* ofproject.css */
 
+/* #headBox ------------------------------------ */
 #headBox {
+  width: 100%;
   height: 70px;
-  background-color: #ccc;
+  position: fixed;
+  background-color: #fff;
 }
 .headinner {
+  width: 100%;
   height: 100%;
   margin: auto;
   display: flex;
 }
-h1 {
-  width: 80%;
+.headinner h1 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.logo {
+  display: block;
+  width: 58px;
+  height: 49px;
+  background-image: url(../../img/OF_virtual.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 20px 0 0 20px;
 }
 .unb {
   width: 27%;
@@ -28,19 +44,91 @@ h1 {
   width: 33.3%;
   text-align: center;
 }
+
+/* #main_page ------------------------ */
+#main_page {padding-top: 70px;}
+
+/* #viewport ------------------------- */
 #viewport {
+  width: auto;
+  height: auto;
   text-align: center;
-  background-color: #ddd;
 }
+.viewport_img01 {
+  width: 100%;
+  height: auto;
+}
+.viewport_img01 img {
+  width: 100%;
+  height: auto;
+}
+
+/* #about ----------------------------------------- */
 #about {
+  width: auto;
+  height: auto;
+  margin: 30px 0;
   text-align: center;
-  background-color: #ccc;
 }
+#about h2 {
+  width: 60px;
+  height: 50px;
+  margin: auto;
+  background-image: url(../../img/OF_virtual.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.sub_title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.date, .time {
+  font-size: 20px;
+  font-weight: 400;
+}
+.content_text {
+  margin-top: 10px;
+}
+.content_text p {
+  font-size: 19px;
+}
+.location {
+  font-size: 19px;
+}
+.direction {
+  font-size: 19px;
+}
+.street {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+/* #place -------------------------- */
 #place {
+  margin: 30px 0;
   text-align: center;
-  background-color: #ddd;
+  /* background-color: #ddd; */
+}
+.main_title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 #contact {
+  padding-bottom: 30px;
   text-align: center;
-  background-color: #ccc;
+  background-color: rgba(212, 73, 69, 60%);
+}
+#contact p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #eee;
+}
+#contact span {
+  font-size: 19px;
+  font-weight: 300;
+  color: #fff;
 }
