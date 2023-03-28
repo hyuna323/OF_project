@@ -82,7 +82,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .date, .time {
   font-size: 20px;
@@ -114,7 +114,7 @@
 .main_title {
   margin-bottom: 20px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
 }
 #contact {
@@ -122,13 +122,15 @@
   text-align: center;
   background-color: rgba(212, 73, 69, 60%);
 }
-#contact p {
+.contact_up {
   font-size: 20px;
-  font-weight: 500;
-  color: #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
 }
-#contact span {
+.contact_up_inner {
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
 }
+

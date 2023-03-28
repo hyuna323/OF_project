@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* reset.css */
 html,body { 
-  font-family:'Noto Sans KR', sans-serif; 
-  font-weight: 300;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 html,body,
