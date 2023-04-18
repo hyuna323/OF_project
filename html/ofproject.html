@@ -11,7 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet"> -->
 
   <script src="../js/common/modernizr-custom.js"></script>
-
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/ofproject.css">
@@ -24,8 +28,40 @@
 <body>
   <header id="headBox">
     <div class="headinner">
+      <div class="header_m">
+        <nav id="unbInner">
+          <h2 class="blind">user navigation</h2>
+          <input type="checkbox" id="check_box">
+          <label for="check_box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div id="slide_menu">
+            <div class="slide_inner">
+              <input type="checkbox" id="slide_btn01">
+              <label for="slide_btn01">
+                <a href="#">home</a>
+              </label>
+              <input type="checkbox" id="slide_btn02">
+              <label for="slide_btn02">
+                <a href="#about">about of</a>
+              </label>
+              <input type="checkbox" id="slide_btn03">
+              <label for="slide_btn03">
+                <a href="#place">place</a>
+              </label>
+              <input type="checkbox" id="slide_btn04">
+              <label for="slide_btn04">
+                <a href="#project">project</a>
+              </label>
+            </div>
+          </div>
+        </nav>
+      </div>
       <h1>
-        <a class="logo" href=""></a>
+        <a href="#" class="blind">오현아 포트폴리오</a>
+        <button onclick="home()"></button>
       </h1>
       <nav class="unb">
         <h2 class="blind">유저네비게이션</h2>
@@ -47,106 +83,119 @@
       </nav>
     </div>
   </header>
-  <!-- <h1><img src="../img/"></h1> -->
+
   <main id="main_page">
-    <section id="viewport">
-      <div class="viewport_img01">
-        <img src="../img/viewport_img01.png" alt="">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="../img/viewport_img01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/viewport_02.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/viewport_03.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/viewport_04.jpeg" alt="">
+        </div>
       </div>
-      <div class="viewport_img02"></div>
-      <div class="viewport_img03"></div>
-      <div class="viewport_img04"></div>
-    </section>
-
-    <section id="about">
-      <h2></h2>
-      <p>오브는 어떤 공간입니다</p>
-      <!-- Exhibition Time -->
-      <p class="sub_title">전시 관람 시간</p>
-      <p class="date">wed.-sun.</p>
-      <p class="time">13:00p.m - 20:00p.m</p>
-      <div class="content_text">
-        <p>*마지막 입장은 19:00p.m</p>
-        <p>*별도 예약 없이 가능합니다.</p>
-      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="content_wrap">
+      <section id="about">
+        <h2 class="blind"></h2>
+        <div class="about_image"></div>
+        <p class="of_about">오브는 어떤 공간입니다</p>
       
-      <!-- Exhibition Location -->
-      <p class="sub_title">전시 위치</p>
-      <span class="location">서울 중구 을지로 4가 32, 3층</span>
+        <!-- Exhibition Time -->
+        <p class="sub_title">전시 관람 시간</p>
+        <p class="date">wed.-sun.</p>
+        <p class="time">13:00p.m - 20:00p.m</p>
+        <div class="content_text">
+          <p>*마지막 입장은 19:00p.m</p>
+          <p>*별도 예약 없이 가능합니다.</p>
+        </div>
 
-      <!-- Exhibition Directions -->
-      <p class="sub_title">오시는 길</p>
-      <p class="direction">을지로 4가역&#40;2호선&#41;</p>
-      <p class="street">1번 출구에서  &#62; &#145;메가룩스조명&#146; 옆 골목길 사이 왼쪽 위치</p>
-    </section>
-    <section id="place">
-      <h2 class="main_title">of's place</h2>
-      <div class="place_inner">
-        <div class="place_desk">
-          <p class="sub_title">메인데스크</p>
-          <div class="desk_inner">
-            <div class="img_left">
-              <img src="" alt="">
-            </div>
-            <div class="text_right">
-              <span>메인데스크에 대한 설명</span>
-            </div>
-          </div>
-        </div>
-        <div class="place_01room">
-          <p class="sub_title">1방</p>
-          <div class="room01_inner">
-            <div class="text_left">
-              <span>1번룸에 대한 설명</span>
-            </div>
-            <div class="img_right">
-              <img src="" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="place_02room">
-          <p class="sub_title">2방</p>
-          <div class="room02_inner">
-            <div class="img_left">
-              <img src="" alt="">
-            </div>
-            <div class="text_right">
-              <span>2번룸에 대한 설명</span>
-            </div>
-          </div>
-        </div>
-        <div class="place_03room">
-          <p class="sub_title">3방</p>
-          <div class="room03_inner">
-            <div class="text_left">
-              <span>3번룸에 대한 설명</span>
-            </div>
-            <div class="img_right">
-              <img src="" alt="">
-            </div>
-          </div>
-        </div>
-        <img class="floor_plan" src="../img/place_organization.png" alt="place 전체 조직도">
-      </div>
-    </section>
-    <footer id="contact">
-      <h2 class="contact_title">contact</h2>
-      <address class="contact_up">
-        <span class="contact_up">tel&#46;</span>
-        <a class="contact_up_inner" href="tel:0507-1391-5231" >0507-1391-5231</a>
-      </address>
-      <address class="contact_up">
-        <span class="contact_up">email&#46;</span>
-        <a class="contact_up_inner" href="mailto:lufitua@gmail.com">lufitua@gmail.com</a>
-      </address>
-      <address class="contact_up">
-        <span class="contact_up">instagram&#46;</span>
-        <a class="contact_up_inner" href="https://www.instagram.com/55ooofff/">@55ooofff</a>
+        <!-- Exhibition Location -->
+        <p class="sub_title">전시 위치</p>
+        <span class="location">서울 중구 을지로 4가 32, 3층</span>
 
-      </address>
-    </footer>
+        <!-- Exhibition Directions -->
+        <p class="sub_title">오시는 길</p>
+        <p class="direction">을지로 4가역&#40;2호선&#41;</p>
+        <p class="street">1번 출구 <small>&#62;</small> &#145;메가룩스조명&#146; 옆 골목길 사이 왼쪽 위치</p>
+      </section>
+      <section id="place">
+        <h2 class="main_title">place</h2>
+        <div class="place_inner">
+          <div class="place_desk">
+            <p class="sub_title">메인데스크</p>
+            <div class="desk_inner">
+              <div class="img_left">
+                <img src="" alt="">
+              </div>
+              <div class="text_right">
+                <span>메인데스크에 대한 설명</span>
+              </div>
+            </div>
+          </div>
+          <div class="place_01room">
+            <p class="sub_title">1방</p>
+            <div class="room01_inner">
+              <div class="text_left">
+                <span>1번룸에 대한 설명</span>
+              </div>
+              <div class="img_right">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="place_02room">
+            <p class="sub_title">2방</p>
+            <div class="room02_inner">
+              <div class="img_left">
+                <img src="" alt="">
+              </div>
+              <div class="text_right">
+                <span>2번룸에 대한 설명</span>
+              </div>
+            </div>
+          </div>
+          <div class="place_03room">
+            <p class="sub_title">3방</p>
+            <div class="room03_inner">
+              <div class="text_left">
+                <span>3번룸에 대한 설명</span>
+              </div>
+              <div class="img_right">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="contact">
+        <h2 class="contact_title">contact</h2>
+        <address class="contact_up">
+          <span class="contact_up">tel&#46;</span>
+          <a class="contact_up_inner" href="tel:0507-1391-5231" >0507-1391-5231</a>
+        </address>
+        <address class="contact_up">
+          <span class="contact_up">email&#46;</span>
+          <a class="contact_up_inner" href="mailto:lufitua@gmail.com">lufitua@gmail.com</a>
+        </address>
+        <address class="contact_up">
+          <span class="contact_up">instagram&#46;</span>
+          <a class="contact_up_inner" href="https://www.instagram.com/55ooofff/">@55ooofff</a>
+        </address>
+      </footer>
+  </div>
   </main>
-
+  
   <!-- script -->
   <script src="../js/ofproject.js"></script>
   
