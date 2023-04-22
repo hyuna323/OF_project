@@ -323,25 +323,25 @@
   #contact {
     padding: 50px 30px;
     text-align: center;
-    background-color: green;
-    color: #fff;
+    background-color: #E0E3DA;
+    color: #000;
   }
   .contact_title {
     margin-bottom: 20px;
     font-size: 26px;
     font-weight: 800;
     text-transform: uppercase;
-    background-color: green;
+    background-color: #E0E3DA;
   }
   .contact_up {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: green;
+    background-color: #E0E3DA;
   }
   .contact_up_inner {
     font-size: 18px;
     font-weight: 400;
-    background-color: green;
+    background-color: #E0E3DA;
   }
 }
